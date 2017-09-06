@@ -1,7 +1,7 @@
 // @flow
 
-import React from 'react';
-import Spinner from './Spinner';
+import React from "react";
+import Spinner from "./Spinner";
 
 class AsyncRoute extends React.Component {
   state = {

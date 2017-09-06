@@ -1,7 +1,7 @@
 // @flow
 
-import axios from 'axios';
-import { SET_SEARCH_TERM, ADD_API_DATA } from './actions';
+import axios from "axios";
+import { SET_SEARCH_TERM, ADD_API_DATA } from "./actions";
 
 export function setSearchTerm(searchTerm: string) {
   return { type: SET_SEARCH_TERM, payload: searchTerm };
@@ -19,7 +19,7 @@ export function getAPIDetails(imdbID: string) {
         dispatch(addAPIData(response.data));
       })
       .catch(error => {
-        console.error('axios error', error);
+        console.error("axios error", error);
       });
   };
 }

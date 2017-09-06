@@ -1,10 +1,10 @@
 // @flow
 
-import React from 'react';
-import { connect } from 'react-redux';
-import Header from './Header';
-import Spinner from './Spinner';
-import { getAPIDetails } from './actionCreators';
+import React from "react";
+import { connect } from "react-redux";
+import Header from "./Header";
+import Spinner from "./Spinner";
+import { getAPIDetails } from "./actionCreators";
 
 class Details extends React.Component {
   componentDidMount() {
@@ -32,7 +32,10 @@ class Details extends React.Component {
           <h1>{title}</h1>
           <h2>({year})</h2>
           {rating}
-          <img src={`/public/img/posters/${poster}`} alt={`Poster for ${title}`} />
+          <img
+            src={`/public/img/posters/${poster}`}
+            alt={`Poster for ${title}`}
+          />
           <p>{description}</p>
         </section>
         <div>
@@ -49,7 +52,9 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const apiData = state.apiData[ownProps.show.imdbID] ? state.apiData[ownProps.show.imdbID] : {};
+  const apiData = state.apiData[ownProps.show.imdbID]
+    ? state.apiData[ownProps.show.imdbID]
+    : {};
   return {
     rating: apiData.rating
   };

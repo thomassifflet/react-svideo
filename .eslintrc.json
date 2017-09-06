@@ -5,10 +5,7 @@
     "prettier",
     "prettier/react"
   ],
-  "plugins": [
-    "flowtype",
-    "prettier"
-  ],
+  "plugins": ["flowtype", "prettier"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2016,

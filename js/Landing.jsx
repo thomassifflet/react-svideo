@@ -1,11 +1,11 @@
 // @flow
 
-import React from 'react';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import type { RouterHistory } from 'react-router-dom';
-import { object } from 'prop-types';
-import { setSearchTerm } from './actionCreators';
+import React from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import type { RouterHistory } from "react-router-dom";
+import { object } from "prop-types";
+import { setSearchTerm } from "./actionCreators";
 
 class Landing extends React.Component {
   static contextTypes = {
@@ -18,7 +18,7 @@ class Landing extends React.Component {
   };
   goToSearch = event => {
     event.preventDefault();
-    this.props.history.push('/search');
+    this.props.history.push("/search");
   };
   render() {
     return (
