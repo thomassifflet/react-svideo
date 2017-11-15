@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/thomassifflet/react-svideo.svg?branch=master)](https://travis-ci.org/thomassifflet/react-svideo)
 # A Complete Intro to React
 
 Welcome to a complete intro to React! The site actual workshop material for this repo can be found [here][gh-page]. On the master branch you will find the completed project. On the start branch you will find the barebones boilerplate of the project designed to help you get started.
